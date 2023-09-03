@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 60%, 98%);
+    padding: 3rem 0;
+    min-height: 100vh
+}
+
+img{
+    width: 3rem;
+    height: 3rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem 0;
+    border-radius: 20px;    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: larger;
+
+}
+
+.notiContianer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.noti{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.notiInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dot{
+    color:red;
+    margin-left: 0.5rem;
+}
+.notiText{
+    display: flex;
+    align-items: center;
+    gap:0.2rem
+}
+
+.name{
+    font-weight: bolder;
+    color: hsl(224, 21%, 14%);
+}
+
+.time{
+    color:gray
+}
+
+.privateNoti{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+#private{
+    background:none;
+}
+.privateMsg{
+    width: 70%;
+    align-self: flex-end;
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid gray ;
+
+}
+.privateMsg:hover{
+    background-color: hsl(210, 60%, 98%);
+    color:gray;
+    border: 1px solid hsl(210, 60%, 98%);
+}
+.extraDetail{
+    color: hsl(219, 12%, 42%);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.extraDetail:hover{
+    color:hsl(224, 21%, 14%)
+}
+.read .dot{
+    display: none;
+}
+
+.notiCount{
+    background-color: hsl(224, 21%, 14%);
+    color:white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 100%;
+    }
+    #wrapper{
+        padding: 0;
+    }
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+}
