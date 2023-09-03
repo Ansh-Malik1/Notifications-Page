@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <header>
+        <h3>Notifications <span class="notiCount">0</span></h3>
+        <h5 class="readAll" style="cursor: pointer;">Mark All As Read</h5>
+      </header>
+      <div class="notiContianer">
+        <div class="noti">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          <div class="notiInfo">
+            <div class="notiText unread">
+              <p><span class="name">Mark Webber</span> reacted to your recent post <span class="extraDetail">My first tournament today!</span><span class="dot">●</span></p>
+            </div>
+            <p class="time">1m Ago</p>
+          </div>
+        </div>
+        <div class="noti">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          <div class="notiInfo">
+            <div class="notiText unread">
+              <p><span class="name">Angela Gray</span> followed you!<span class="dot">●</span></p>
+            </div>
+            <p class="time">5m Ago</p>
+          </div>
+        </div>
+        <div class="noti">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          <div class="notiInfo">
+            <div class="notiText unread">
+              <p><span class="name">Jacob Thompson</span> has joined your group <span class="extraDetail">Chess Club!</span><span class="dot">●</span></p>
+            </div>
+            <p class="time">1d Ago</p>
+          </div>
+        </div>
+        <div class="privateNoti">
+          <div class="noti" id="private">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+            <div class="notiInfo">
+              <div class="notiText read">
+                <p><span class="name">Rizky Hasanuddin</span> sent you a private msg.<span class="dot">●</span></p>
+              </div>
+              <p class="time">5 days Ago</p>
+            </div>
+          </div>
+          <div class="privateMsg">
+            <p>
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+        <div class="noti">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+          <div style="display: flex; justify-content: space-between; width: 100%; align-items:center;">
+            <div class="notiInfo">
+              <div class="notiText read">
+                <p><span class="name">Kimberly Smith</span> commented on your picture<span class="dot">●</span></p>
+              </div>
+              <p class="time">1week Ago</p>
+            </div>
+            <img src="./assets/images/image-chess.webp">
+          </div>
+        </div>
+        <div class="noti">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+          <div class="notiInfo">
+            <div class="notiText read">
+              <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="extraDetail">end game stratergies to increase your win rate</span><span class="dot">●</span></p>
+            </div>
+            <p class="time">2 weeks Ago</p>
+          </div>
+        </div>
+        <div class="noti">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="">
+          <div class="notiInfo">
+            <div class="notiText read">
+              <p><span class="name">Anna Kim</span> left the group <span class="extraDetail">Chess Club</span><span class="dot">●</span></p>
+            </div>
+            <p class="time">2 weeks Ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
